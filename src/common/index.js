@@ -5,7 +5,7 @@ const backenddomain = "https://shopsphere-ohg5.onrender.com"
  export const SummaryApi = {
     signUp:{
         url :`${backenddomain}/api/signup`,
-        method:"post"git 
+        method:"post" 
     },
     signIn:{
         url:`${backenddomain}/api/signin`,
