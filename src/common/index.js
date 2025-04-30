@@ -1,7 +1,6 @@
  
 
-const backenddomain = "https://shopsphere-ohg5.onrender.com"
-
+const backenddomain = " http://localhost:8080" ; 
  export const SummaryApi = {
     signUp:{
         url :`${backenddomain}/api/signup`,
@@ -79,5 +78,28 @@ searchProduct :{
    filterproduct  :{
     url:`${backenddomain}/api/filter-product`,
     method:"post",
-   }
+   },
+   payment : {
+    url : `${backenddomain}/api/checkout`,
+    method  : 'post'
+},
+getOrder : {
+    url : `${backenddomain}/api/order-list`,
+    method : 'get'
+}, 
+allOrder : {
+    url : `${backenddomain}/api/all-order`,
+    method : 'get'
+}
+ ,
+placeOrder :{
+    url :`${backenddomain}/api/place-order`,
+    method:'post'
+},
+verifyOrder :{
+    url :`${backenddomain}/api/verify-order`,
+    method:'post'
+}
+
+
 }
